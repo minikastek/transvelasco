@@ -1,6 +1,8 @@
 import React from 'react'
 import Achime from '../../assets/logo/Achime.png'
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook,faInstagram,faYoutube} from '@fortawesome/free-brands-svg-icons'
+
 
 export const Footer = () => {
   return (
@@ -54,22 +56,45 @@ export const Footer = () => {
 
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h6 className="text-uppercase mb-4 font-weight-bold">Redes Sociales</h6>
-       
-                            <button className="btn btn-primary">
-                                {/* <FontAwesomeIcon icon="fa-brand fa-facebook" /> */}
-                            </button>
 
-                            <button className="btn btn-primary">
-                                {/* <FontAwesomeIcon icon="fab fa-twitter" /> */}
-                            </button>
-
-                            <button className="btn btn-primary">
-                                {/* <FontAwesomeIcon icon="fab fa-google" /> */}
-                            </button>
-                            
-                            <button className="btn btn-primary">
-                                {/* <FontAwesomeIcon icon="fab fa-instagram" /> */}
-                            </button>
+                            <a 
+                                target="_blank" 
+                                href="https://www.facebook.com/Transvelasco-101016614065782"
+                            >  
+                                <button 
+                                    className="btn btn-primary" style={{
+                                        margin: 10,
+                                        borderRadius: 10
+                                    }}>
+                                    <FontAwesomeIcon icon={faFacebook}/>
+                                </button>
+                            </a>  
+                            <br/>
+                            <a 
+                                target="_blank" 
+                                href="https://www.instagram.com/transvelasco_oficial1/"
+                            >
+                                <button className="btn btn-primary"style={{
+                                    margin: 10,
+                                    borderRadius: 10
+                                }}>
+                                    <FontAwesomeIcon icon={faInstagram} />
+                                </button>
+                            </a>
+                            <br/>
+                            <a 
+                                target="_blank" 
+                                href="http://google.com"
+                            >
+                                <button className="btn btn-primary"style={{
+                                    margin: 10,
+                                    borderRadius: 10,
+                                    height: 40,
+                                    width: 40,
+                                }}>
+                                    <FontAwesomeIcon icon={faYoutube} />
+                                </button>
+                            </a>
             
                         </div>
                     </div>

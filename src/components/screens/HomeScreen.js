@@ -1,23 +1,41 @@
 import React from 'react'
 import './HomeScreen.css'
+import imgHome from '../../assets/pictures/imgHome.jpg'
+import transvelasco_2 from '../../assets/logo/transvelasco_2.png'
+
 
 export const HomeScreen = () => {
   return (
     <div>
-      <div className="contenedor">
-        <h1
-          className="texto-encima">
-            HomeScreen
+      <div className="contenedor" 
+        style={{
+          backgroundImage: `url(${imgHome})`,
+        }}
+      >
+        <br/>
+        <br/>
+        <br/>
+        <h1 className="textoEncima">
+          Transvelasco
         </h1>
-
-        <img style={{
-          width: "100%"
-        }} 
-          src="https://www.formulamoto.es/wp-content/uploads/2021/11/motos_trail.jpg"/>
+        <br/>
+        <br/>
+        <p className="textoEncima">
+          Te hacemos vivir la aventura en el interior del país desde 1988
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/> 
       </div>
       <div>
+      </div>
+      <div className="boxHome">
         <h1>La Carrera</h1>
-        <h3>Desde sus primeras ediciones, en Abril de 1988 el Transvelasco, nace cuando un grupo de
+        <h3 style={{ fontSize: 20}}>Desde sus primeras ediciones, en Abril de 1988 el Transvelasco, nace cuando un grupo de
             pilotos de enduro apasionados por esta actividad, y sin prever la magnitud del alcance que iba
             a tener, deciden realizar una competencia deportiva, que este año cumple 34 años y va por su
             26º edición, buscando aprovechar las cualidades geográficas inmejorables para realizar esta
