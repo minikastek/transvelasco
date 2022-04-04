@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeScreen.css'
+import './ScreensStyle.css'
 import imgRegla from '../../assets/pictures/imgRegla.png'
 
 export const ReglamentoScreen = () => {

@@ -1,12 +1,12 @@
-import React from 'react'
-import './HomeScreen.css'
-import imgHome from '../../assets/pictures/imgHome.jpg'
-import transvelasco_2 from '../../assets/logo/transvelasco_2.png'
-
+import React from 'react';
+import './ScreensStyle.css';
+import imgHome from '../../assets/pictures/imgHome.jpg';
 
 export const HomeScreen = () => {
   return (
     <div>
+
+      {/* Titulo */}
       <div className="contenedor" 
         style={{
           backgroundImage: `url(${imgHome})`,
@@ -31,8 +31,10 @@ export const HomeScreen = () => {
         <br/>
         <br/> 
       </div>
+
       <div>
       </div>
+      {/* cuerpo */}
       <div className="boxHome">
         <h1>La Carrera</h1>
         <h3 style={{ fontSize: 20}}>Desde sus primeras ediciones, en Abril de 1988 el Transvelasco, nace cuando un grupo de

@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeScreen.css'
+import './ScreensStyle.css'
 import imgAloja from '../../assets/pictures/imgAloja.jpg'
 
 export const AlojamientoGastronomiaScreen = () => {

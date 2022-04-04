@@ -1,5 +1,5 @@
 import React from 'react'
-import './HomeScreen.css'
+import './ScreensStyle.css'
 import imgContacto from '../../assets/pictures/imgContacto.png'
 
 export const ContactoScreen = () => {

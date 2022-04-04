@@ -2,6 +2,7 @@ import React from 'react'
 import Achime from '../../assets/logo/Achime.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook,faInstagram,faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {  NavLink } from 'react-router-dom'
 
 
 export const Footer = () => {
@@ -17,29 +18,60 @@ export const Footer = () => {
                             <h6 className="text-uppercase mb-4 font-weight-bold">
                                 Organizadores
                             </h6>
+                            
+                            <a 
+                                target="_blank" 
+                                href="https://www.facebook.com/achime.chilecito"
+                            >
                             <img
                                 style={{
                                     width: 180
                                 }}
                                 src={Achime}/>
+                            </a>
                         </div>
 
                         <hr className="w-100 clearfix d-md-none" />
 
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 className="text-uppercase mb-4 font-weight-bold">Informacion</h6>
-                            <p>
+                            <h6 className="text-uppercase mb-4 font-weight-bold">Información</h6>
+
+                            <NavLink
+                                to="/carrera"
+                                className={isActive =>
+                                    "nav-link" + (!isActive ? " unselected" : "")
+                                }
+                            >
                                 Carrera
-                            </p> 
-                            <p>
+                            </NavLink>
+
+                            <NavLink
+                                to="/reglamento"
+                                className={isActive =>
+                                    "nav-link" + (!isActive ? " unselected" : "")
+                                }
+                            >
                                 Reglamento
-                            </p>
-                            <p>
+                            </NavLink>
+
+                            <NavLink
+                                to="/inscripciones"
+                                className={isActive =>
+                                    "nav-link" + (!isActive ? " unselected" : "")
+                                }
+                            >
                                 Inscripciones
-                            </p>
-                            <p>
+                            </NavLink>
+
+                            <NavLink
+                                to="/aloja"
+                                className={isActive =>
+                                    "nav-link" + (!isActive ? " unselected" : "")
+                                }
+                            >
                                 Alojamiento
-                            </p>
+                            </NavLink>
+
                         </div>
 
                         <hr className="w-100 clearfix d-md-none" />
@@ -49,9 +81,9 @@ export const Footer = () => {
                         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h6 className="text-uppercase mb-4 font-weight-bold">Contacto</h6>
                             <p><i className="fas fa-home mr-3"></i> Chilecito, La Rioja, Argentina</p>
-                            <p><i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                            <p><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                            <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                            <p><i className="fas fa-envelope mr-3"></i> Achime_chilecito@hotmail.com</p>
+                            <p><i className="fas fa-phone mr-3"></i> 3825 534813 </p>
+                            <p><i className="fas fa-print mr-3"></i> 3825 443076</p>
                         </div>
 
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">

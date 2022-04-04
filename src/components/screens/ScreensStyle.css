@@ -26,10 +26,6 @@
 
 /* Home */
 
-.textoHome{
-    
-}
-
 .boxHome {
     background-color: #bd8e42;
     opacity: 0.8;
@@ -57,6 +53,33 @@
     width: 300px;
 }
 
+/* inscripciones */
+
+.boxInscripcionesGrande{
+    margin: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxInscripciones{
+    background-color: rgba(189, 142, 66, 0.7);
+    box-shadow: 0px 3px grey;
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    border-radius: 10px ;
+    color: black;
+    border: 0px;
+    border-bottom: 1px solid black;
+    height: 25px;
+    width: 90%;
+}
 
 /* Footer */
 
