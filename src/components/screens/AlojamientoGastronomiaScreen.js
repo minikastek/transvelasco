@@ -36,7 +36,9 @@ export const AlojamientoGastronomiaScreen = () => {
       {/* Cuerpo */}
 
       <div className='boxAlojamientoGrande'>
-        <div className="boxAlojamiento">
+        
+        <div className='row align-items-start'>
+          <div className="col boxAlojamiento">
             <h3>Hoteles</h3>
             <ul>
               <li>A.C.A Timoteo Gordillo y Alberto G. Ocampo Tel. (03825) 422201/2 </li>
@@ -67,10 +69,12 @@ export const AlojamientoGastronomiaScreen = () => {
               <li>HOTEL CASA GRANDE
               PIO XII 469.B°San Francisco.
               03825/15501412/ 15432493</li>
-          </ul>
+            </ul>
         </div>
+
         <hr className="w-100 clearfix d-md-none" />
-        <div className="boxAlojamiento">
+
+        <div className="col boxAlojamiento">
           <h3>Apart Hotel</h3>
           <ul>
             <li>COMPLEJO TORRES DEL CERRO APART
@@ -99,70 +103,81 @@ export const AlojamientoGastronomiaScreen = () => {
             TE: 03825-15459783</li>
           </ul>
         </div>
+        </div>
+        
         <hr className="w-100 clearfix d-md-none" />
-        <div className="boxAlojamiento">
-          <h3>Hostel</h3>
-          <ul>
-            <li>LA CASONA
-            Leandro N.Alem puerta 160 –Los Sarmientos
-            Tel (0380)4344212</li>
-            <li>HOSTEL CULTURAL DON ISIDRO.
-            19 de Febrero 558.
-            Tel 03825-15672867 / 351-3134244</li>
-            <li>BED AND BREAKFAST
-            (B & B) “Los Cerros 2 “
+
+        <div className='row align-items-start'>
+          <div className="col boxAlojamiento">
+           <h3>Hostel</h3>
+           <ul>
+             <li>LA CASONA
+             Leandro N.Alem puerta 160 –Los Sarmientos
+             Tel (0380)4344212</li>
+             <li>HOSTEL CULTURAL DON ISIDRO.
+              19 de Febrero 558.
+              Tel 03825-15672867 / 351-3134244</li>
+              <li>BED AND BREAKFAST
+             (B & B) “Los Cerros 2 “
             12 de Octubre 23- Barrios Los Cerros 2
-            Tel. 03825-15409542</li>
-          </ul>
-        </div>
-        <hr className="w-100 clearfix d-md-none" />
-        <div className="boxAlojamiento">
-          <h3>Cabañas</h3>
-          <ul>
-            <li>ALBERKEL
-            Sta. Florentina R Nº14 Km 9
-            Tel. (03825) 423692/15521423</li>
-            <li> EL MOLINO
+              Tel. 03825-15409542</li>
+           </ul>
+         </div>
+
+          <hr className="w-100 clearfix d-md-none" />
+
+          <div className="col boxAlojamiento">
+           <h3>Cabañas</h3>
+            <ul>
+              <li>ALBERKEL
+              Sta. Florentina R Nº14 Km 9
+              Tel. (03825) 423692/15521423</li>
+              <li> EL MOLINO
             Santa Rita 72 Bº El Parque – Tel. (03825) 15660424</li>
-            <li>LA ALAMEDA
-            San Román 788
-            Tel. (03825) 423199/15554888</li>
-            <li>LA HIGUERA
-            Leandro N. Além 1050 (Los Sarmientos)
-            Tel. (03825)426914/15400865</li>
-            <li>LA MARTINA
-            Leandro N. Além (Los Sarmientos) –
-            Tel. (03825) 423353/15409880</li>
-            <li>LAS VIÑAS
-            Santa Rosa s/n (Anguinán) –
-            Tel. (03825) 491717/15523214.</li>
-            <li>LOS ALGARROBOS
-            Bº La Calle Sañogasta –
-            (03825) 15670469</li>
-            <li>LOS NOGALES
-            B° El Pozo – Sañogasta –
-            Tel. (03825) 422518/495789/15557098/97</li>
-            <li>MARÍA BELÉN
-            Ruta Nac. 40 Km 3869 –
-            Tel. (03825) 15537690.</li>
-            <li>RIO AMARILLO
-            Ruta Prov. 14 (Las Talas) –
-            Tel. (03825) 15559448</li>
-            <li>VALLES DE SAN MIGUEL/
-            Miguel Azcuénaga s/n –
-            Tel. (03825) 429153/15518519/15407024</li>
-            <li>DON ROQUE
-            Señora de la Merced 9005 (Anguinán)
-            Tel (03825) /15677076/ 15671100</li>
-            <li>CABLE CARRIL
-            Ruta 40 –Acceso Sur Km. 4868aprox.
-            Tel. (03825) 15404444</li>
-            <li>SANTA BÁRBARA
-            Tel.( 3825) 431989 (CEL) / (264) 5633718</li>
-          </ul>
+              <li>LA ALAMEDA
+              San Román 788
+              Tel. (03825) 423199/15554888</li>
+              <li>LA HIGUERA
+              Leandro N. Além 1050 (Los Sarmientos)
+              Tel. (03825)426914/15400865</li>
+              <li>LA MARTINA
+              Leandro N. Além (Los Sarmientos) –
+              Tel. (03825) 423353/15409880</li>
+              <li>LAS VIÑAS
+              Santa Rosa s/n (Anguinán) –
+             Tel. (03825) 491717/15523214.</li>
+             <li>LOS ALGARROBOS
+             Bº La Calle Sañogasta –
+             (03825) 15670469</li>
+              <li>LOS NOGALES
+              B° El Pozo – Sañogasta –
+              Tel. (03825) 422518/495789/15557098/97</li>
+              <li>MARÍA BELÉN
+              Ruta Nac. 40 Km 3869 –
+              Tel. (03825) 15537690.</li>
+              <li>RIO AMARILLO
+              Ruta Prov. 14 (Las Talas) –
+              Tel. (03825) 15559448</li>
+              <li>VALLES DE SAN MIGUEL/
+              Miguel Azcuénaga s/n –
+              Tel. (03825) 429153/15518519/15407024</li>
+              <li>DON ROQUE
+              Señora de la Merced 9005 (Anguinán)
+              Tel (03825) /15677076/ 15671100</li>
+              <li>CABLE CARRIL
+              Ruta 40 –Acceso Sur Km. 4868aprox.
+              Tel. (03825) 15404444</li>
+              <li>SANTA BÁRBARA
+              Tel.( 3825) 431989 (CEL) / (264) 5633718</li>
+           </ul>
+          </div>
         </div>
+
         <hr className="w-100 clearfix d-md-none" />
-        <div className="boxAlojamiento">
+
+        <div className='row align-items-start'>
+          <div className="col boxAlojamiento">
+          
           <h3>Posadas y Hosterias</h3>
           <ul>
             <li>POSADA DEL SENDERO/
@@ -187,7 +202,7 @@ export const AlojamientoGastronomiaScreen = () => {
           </ul>
         </div>
         <hr className="w-100 clearfix d-md-none" />
-        <div className="boxAlojamiento">
+        <div className="col boxAlojamiento">
           <h3>Camping</h3>
           <ul>
             <li>Camping Los Algarrobos
@@ -212,6 +227,7 @@ export const AlojamientoGastronomiaScreen = () => {
             Km3 Ruta Prov. Nº12 (San Miguel)
             Tel. (03825) 3825 440034</li>
           </ul>
+         </div>
         </div>
       </div>
     </div>

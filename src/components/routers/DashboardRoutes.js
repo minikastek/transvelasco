@@ -8,7 +8,7 @@ import {CarreraScreen} from '../screens/CarreraScreen';
 import {ContactoScreen} from '../screens/ContactoScreen';
 import {CircuitoScreen} from '../screens/CircuitoScreen';
 import {InscripcionesScreen} from '../screens/InscripcionesScreen';
-import {ReglamentoScreen} from '../screens/ReglamentoScreen';
+import {CategoriasScreen} from '../screens/CategoriasScreen';
 import {AlojamientoGastronomiaScreen} from '../screens/AlojamientoGastronomiaScreen';
 import {SponsorsScreen} from '../screens/SponsorsScreen';
 import { Footer } from '../ui/Footer';
@@ -24,7 +24,7 @@ export const DashboardRoutes = () => {
             <Route path="circuito" element={<CircuitoScreen/>} />
             <Route path="contacto" element={<ContactoScreen/>} />
             <Route path="inscripciones" element={<InscripcionesScreen/>} />
-            <Route path="reglamento" element={<ReglamentoScreen/>} />
+            <Route path="categorias" element={<CategoriasScreen/>} />
             <Route path="sobre" element={<SobreScreen/>} />
             <Route path="sponsors" element={<SponsorsScreen/>} />
 

@@ -29,10 +29,8 @@
 .boxHome {
     background-color: #bd8e42;
     opacity: 0.8;
-    margin: 10px;
-    margin-left: 50%;
-    padding: 20px;
     border-radius: 15px;
+    margin: 10px
 }
 
 /* Aloja */
@@ -90,3 +88,21 @@
 .boxFooter{
     margin-left: -20;
 }
+
+/* video youtube */
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  

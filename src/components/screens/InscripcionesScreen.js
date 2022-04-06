@@ -4,9 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import imgInscripcion from '../../assets/pictures/imgInscripcion.png'
 import { useForm } from '../../hooks/useForm'
 import { setError, uiRemoveError } from "../actions/ui";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import Swal from 'sweetalert2';
 
 export const InscripcionesScreen = () => {
+
+  const [startDate, setStartDate] = useState(new Date());
 
   const [dropdown, setDropdown]=useState(false);
 
@@ -211,6 +215,16 @@ export const InscripcionesScreen = () => {
               <option value="si">Si</option>
               <option value="no">No</option>
             </select>
+
+            <br/>
+            <label htmlFor="apellido">Cumpleaños</label>
+            <br/>
+
+            <DatePicker 
+              selected={startDate} 
+              className='input' 
+              onChange={(date:Date) => setStartDate(date)} 
+            />
 
           </form>
 

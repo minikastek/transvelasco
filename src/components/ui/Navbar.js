@@ -29,7 +29,7 @@ export const Navbar = () => {
                 <div class="dropdown">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
@@ -63,9 +63,9 @@ export const Navbar = () => {
 
                         <NavLink 
                             className="nav-item nav-link" 
-                            to="/reglamento"
+                            to="/categorias"
                         >
-                            Reglamento
+                            Categorias
                         </NavLink>
 
                         <NavLink 

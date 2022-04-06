@@ -46,12 +46,12 @@ export const Footer = () => {
                             </NavLink>
 
                             <NavLink
-                                to="/reglamento"
+                                to="/categorias"
                                 className={isActive =>
                                     "nav-link" + (!isActive ? " unselected" : "")
                                 }
                             >
-                                Reglamento
+                                Categorias
                             </NavLink>
 
                             <NavLink
