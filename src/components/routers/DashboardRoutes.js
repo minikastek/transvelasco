@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar } from '../ui/Navbar';
+import { NavBar } from '../ui/Navbar';
 import { Routes, Route } from "react-router-dom";
 
 import { HomeScreen } from '../screens/HomeScreen';
@@ -17,7 +17,7 @@ import { Footer } from '../ui/Footer';
 export const DashboardRoutes = () => {
   return (
     <>
-        <Navbar />
+        <NavBar />
         <Routes>   
             <Route path="Aloja" element={<AlojamientoGastronomiaScreen/>} />
             <Route path="carrera" element={<CarreraScreen/>} />

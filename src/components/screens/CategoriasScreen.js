@@ -15,13 +15,13 @@ export const CategoriasScreen = () => {
           <br/>
           <br/>
           <br/>
-          <h1 className="texto-encima">Categorias</h1>
+          <h1 className="texto-encima" style={{color:'white'}}>Categorias</h1>
           <br/>
           <br/>
           <br/>
           <br/>
           <br/>
-          <p className="textoEncima">
+          <p className="textoEncima" style={{color:'white'}}>
             Todas las caracteristicas de cada categoria
           </p>
           <br/>
@@ -45,6 +45,7 @@ export const CategoriasScreen = () => {
             <li>MASTER JUNIOR:43 a 48 cumplidos o a cumplir en este año en curso, Clase BRONCE (ECS)</li>
             <li>MASTER C: 48 a 55 años cumplidos o a cumplir en este año en curso. Reccorrido
                 completo sin Enduro de la Muerte. Clase Hierro (ECS) </li>
+            <li>MASTER D: 52 años en adelante. Recorrido completo sin enduro de la muerte Clase Hierro (ECS)</li>
             <li>DAMAS: Clase Diamante (ECS)</li>
             <li>PAREJA A: Dos pilotos recorrido completo sin Enduro de la Muerte</li>
             <li>PAREJA B: Dos pilotos que no compiten en ningun Campeonato sin experiencia

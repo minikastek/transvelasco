@@ -9,7 +9,7 @@ export const ContactoScreen = () => {
         className="contenedor"
         style= {{backgroundImage: `url(${imgContacto})`}}
       > 
-        <div className='boxTitulo'>
+        <div className='boxTitulo' style={{color: 'white'}}>
           <br/>
           <br/>
           <br/>

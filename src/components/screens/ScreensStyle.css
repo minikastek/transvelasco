@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.color{
+    background-color: rgb(71, 71, 71);
+    padding: 15px;
+}
 /* general */
 
 .textoEncima{
@@ -27,10 +31,11 @@
 /* Home */
 
 .boxHome {
-    background-color: #bd8e42;
+    background-color: rgb(168, 168, 168,0.6);
     opacity: 0.8;
     border-radius: 15px;
-    margin: 10px
+    margin: 10px;
+    color: white
 }
 
 /* Aloja */

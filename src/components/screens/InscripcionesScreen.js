@@ -223,8 +223,8 @@ export const InscripcionesScreen = () => {
             <DatePicker 
               selected={startDate} 
               className='input' 
-              onChange={(date:Date) => setStartDate(date)} 
-            />
+              onChange={(date) => setStartDate(date)} 
+            /> 
 
           </form>
 
