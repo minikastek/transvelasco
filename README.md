@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+## Plantilla front para Inscripciones y carreras
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La base de una web con inscripciones para no empezar simplemente un proyecto de cero. Botones en navbar que navegan a las paginas que se le indica dejando el navbar y el footer siempre constantes, el logo tiene la ruta del home. 
 
-## Available Scripts
+El objetivo del proyecto es meramente educativo.
 
-In the project directory, you can run:
+## Navegacion
 
-### `npm start`
+Recorremos cada boton en el navbar para ir a las diversas screens que tenemos, algunas vacias, podemos clickear el logo para volver al inicio
+Tambien podremos clickear el footer donde estan las categorias para cumplir la misma funcion junto con informacion extra
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Footer y Navbar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Enfocado a la navegacion, el navbar y el footer se encuentran constantes sin importar la screen en la que estemos para siempre tener el control de donde queremos ir. El navbar tiene el logo de la empresa que lleva al inicio y el footer se le suma informacion de contacto y diversos links de redes sociales
 
-### `npm test`
+## Organizacion del proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El proyecto esta organizado en una carpeta general llamada "src" dentro de ella encontraremos 3 carpetas importantes:  
+-Assets, es el lugar donde dejaremos todos los elementos estaticos como imagenes o logos 
+-Hooks, en esta carpeta tendremos los hooks que nos ayudaran a reutilizar el codigo en varias screens
+-Components, donde tendremos todos los componentes de nuestro proyecto, en la carpeta de cada uno de los componentes, en caso de ser necesario tendran su propio archivo .css para sus respectivos estilos
 
-### `npm run build`
+## Como correr el codigo y como ver el funcionamiento 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En el modo desarollador la app corre con npm start (una vez realizado el propio npm install), para verlo en tu navegador [http://localhost:3000](http://localhost:3000) 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Se hizo un deploy de pruebas en vercel para poder compartirlo
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://transvelasco.vercel.app/
