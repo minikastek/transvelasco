@@ -12,6 +12,7 @@ import {CategoriasScreen} from '../screens/CategoriasScreen';
 import {AlojamientoGastronomiaScreen} from '../screens/AlojamientoGastronomiaScreen';
 import {SponsorsScreen} from '../screens/SponsorsScreen';
 import { Footer } from '../ui/Footer';
+import { AdminScreen } from '../screens/AdminScreen';
 
 
 export const DashboardRoutes = () => {
@@ -27,6 +28,7 @@ export const DashboardRoutes = () => {
             <Route path="categorias" element={<CategoriasScreen/>} />
             <Route path="sobre" element={<SobreScreen/>} />
             <Route path="sponsors" element={<SponsorsScreen/>} />
+            <Route path="admin" element={<AdminScreen/>}/>
 
             <Route path="/" element={<HomeScreen/>} />
         </Routes>

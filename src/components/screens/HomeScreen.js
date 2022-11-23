@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ScreensStyle.css';
 import imgHome from '../../assets/pictures/imgHome.jpg';
 import YoutubeEmbed from "../helpers/YoutubeEmbed";
@@ -8,6 +8,26 @@ import transvelasco_1 from '../../assets/logo/transvelasco_1.png'
  
 
 export const HomeScreen = () => {
+
+  const [actualId, setActualId] = useState("#IdIntercambiable")
+
+  const CambioId = () => {
+    const min = 1; 
+    const max = 50;
+
+    var id = Math.floor(Math.random()*(max - min + 1)) + min;
+    
+    const btnId = document.querySelector('#IdIntercambiable');
+
+    id=id.toString();
+
+    btnId.setAttribute('id', id);
+
+    console.log(id);
+    setActualId("#"+id);
+    console.log(actualId);
+  } 
+
   return (
     <div>
 
@@ -59,6 +79,17 @@ export const HomeScreen = () => {
                 actividad que nos ofrece tanto nuestra ciudad, apuntando principalmente a promover el
                 deporte entre los jóvenes.
             </h3>
+
+            <button
+              id="IdIntercambiable"
+            >Inscribirse
+            </button> 
+
+            <button
+              id="CambioId"
+              onClick={CambioId}
+            >Cambiar id
+            </button> 
           </div>
         </div>
       </div>
@@ -67,7 +98,7 @@ export const HomeScreen = () => {
         <Carousel.Item>
           <img 
             className='d-block w-100'
-            src="https://www.revistaoffroad.com/wp-content/uploads/2019/07/Matteo-de-Gavardo-A_resize.jpg"
+            src="https://www.moto1pro.com/sites/default/files/enduropro_ktm_freeride_prueba_-_5_0.jpeg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -91,7 +122,7 @@ export const HomeScreen = () => {
         <Carousel.Item>
           <img 
             className='d-block w-100'
-            src="https://www.revistaoffroad.com/wp-content/uploads/2019/07/Matteo-de-Gavardo-A_resize.jpg"
+            src="https://moto-station.com/wp-content/uploads/2022/02/11/garcia-gncc.jpg"
             alt="third slide"
           />
           <Carousel.Caption>

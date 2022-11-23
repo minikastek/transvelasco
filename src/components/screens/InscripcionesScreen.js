@@ -11,12 +11,6 @@ import Swal from 'sweetalert2';
 export const InscripcionesScreen = () => {
 
   const [startDate, setStartDate] = useState(new Date());
-
-  const [dropdown, setDropdown]=useState(false);
-
-  const abrirCerrarDropdown =()=>{
-      setDropdown(!dropdown);
-  }
   
   const dispatch = useDispatch();
   const {msgError} = useSelector( state => state.ui );
@@ -237,6 +231,7 @@ export const InscripcionesScreen = () => {
             >
               Inscribirse !
             </button>
+            
         </div>
       </div>
 
