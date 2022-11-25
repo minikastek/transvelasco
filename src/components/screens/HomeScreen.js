@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ScreensStyle.css';
 import imgHome from '../../assets/pictures/imgHome.jpg';
 import YoutubeEmbed from "../helpers/YoutubeEmbed";
@@ -9,24 +9,32 @@ import transvelasco_1 from '../../assets/logo/transvelasco_1.png'
 
 export const HomeScreen = () => {
 
-  const [actualId, setActualId] = useState("#IdIntercambiable")
+  var idNuevo;
+  var idViejo = "#IdIntercambiable";
 
   const CambioId = () => {
     const min = 1; 
     const max = 50;
-
-    var id = Math.floor(Math.random()*(max - min + 1)) + min;
     
-    const btnId = document.querySelector('#IdIntercambiable');
+    var id = Math.floor(Math.random()*(max - min + 1)) + min;
 
-    id=id.toString();
+    idNuevo ="#id"+id.toString();
+    
+    const btnId = document.querySelector(idViejo);
 
-    btnId.setAttribute('id', id);
+    btnId.setAttribute('id', idNuevo);
 
     console.log(id);
-    setActualId("#"+id);
-    console.log(actualId);
+    console.log(idNuevo);
   } 
+
+  const ResetId = () => {
+    console.log("lo intente")
+    const btnId = document.querySelector(idNuevo);
+
+    btnId.setAttribute('id', idViejo);
+
+  }
 
   return (
     <div>
@@ -82,13 +90,16 @@ export const HomeScreen = () => {
 
             <button
               id="IdIntercambiable"
-            >Inscribirse
+              onClick={ResetId}
+            >
+              Inscribirse
             </button> 
 
             <button
               id="CambioId"
               onClick={CambioId}
-            >Cambiar id
+            >
+              Cambiar id
             </button> 
           </div>
         </div>
