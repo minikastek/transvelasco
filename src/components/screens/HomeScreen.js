@@ -20,7 +20,7 @@ export const HomeScreen = () => {
 
     idNuevo ="#id"+id.toString();
     
-    const btnId = document.querySelector(idViejo);
+    const btnId = document.querySelector(".reset");
 
     btnId.setAttribute('id', idNuevo);
 
@@ -30,7 +30,7 @@ export const HomeScreen = () => {
 
   const ResetId = () => {
     console.log("lo intente")
-    const btnId = document.querySelector(idNuevo);
+    const btnId = document.querySelector(".reset");
 
     btnId.setAttribute('id', idViejo);
 
@@ -91,6 +91,7 @@ export const HomeScreen = () => {
             <button
               id="IdIntercambiable"
               onClick={ResetId}
+              className="reset"
             >
               Inscribirse
             </button> 
